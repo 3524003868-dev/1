@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;   /* 纯黑背景 */
+            color: #000000;              /* 黑色文字，与背景融为一体 */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            padding: 2rem 1.5rem;
+        }
+
+        .dialogue {
+            white-space: pre-wrap;
+            word-break: break-word;
+            /* 允许用户选中文本 */
+            user-select: text;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+        }
+
+        /*我敢打赌，这至少是你第二次来这里了 */
+        .dialogue::selection {
+            background: #3390ff;   /* 经典选中蓝 */
+            color: #ffffff;        /* 白色文字，清晰可见 */
+        }
+
+        .dialogue::-moz-selection {
+            background: #3390ff;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dialogue">
+—  从这里开始？<br>
+—  是的<br>
+—  …<br>
+—  神秘而深邃的，记录编号      —  是的<br>
+—  艰辛而伟大的，记录时间      —  是的<br>
+—  先上去再下来，记录数量      —  是的…等等<br>
+—  什么？<br>
+—  这是除数吗？<br>
+—  …<br>
+—  …<br>
+—  误会是容易被引起的<br>
+—  it's a pun，sir. 
+        </div>
+    </div>
+</body>
+</html>
